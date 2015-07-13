@@ -15,7 +15,6 @@
 import sys
 import os
 import shlex
-from recommonmark.parser import CommonMarkParser
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -39,13 +38,16 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 templates_path = ['_templates']
 
 # Specify a source parser
-source_parsers = {
-    '.md': CommonMarkParser,
-}
+#source_parsers = {
+#    '.md': CommonMarkParser,
+#}
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
-source_suffix = ['.rst', '.md']
+#source_suffix = ['.rst', '.md']
+
+# Single source.
+source_suffix = '.rst'
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
