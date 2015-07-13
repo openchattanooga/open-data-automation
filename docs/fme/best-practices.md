@@ -1,6 +1,6 @@
 ## Best Practices
 
-
+These are good guidelines to go by when setting up a workflow for automation. Following these guidelines will generally prevent you from falling into certain pitfalls mentioned below.
 
 ### Readers
 
@@ -17,6 +17,18 @@ This is the most confusing where the non-spatial and spatial reader name, like f
 If you set a timeout of zero for the reader, the reader will attempt to read from the data source forever. It is generally ok if you do this while you are working inside FME. However, if you run this workflow from the master workflow, the potential is there for the workflow to not ever stop running.
 
 Setting your timeout to 30 seconds is generally good. If you find that your reader needs more time, set a higher timeout.
+
+### Dates And Times
+
+#### Convert Dates and Times To ISO 8601
+
+Use the [DateFormatter](http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/dateformatter.htm) transformer to convert date/time columns into a standard date/time format. Socrata understands [several date/time formats](https://support.socrata.com/hc/en-us/articles/202949918-Importing-Data-Types-and-You-), but it is best to adhere to ISO 8601 as much as possible.
+
+### Geospatial Data
+
+#### Ensure Geospatial Data is Projected To EPSG:4326/LL84
+
+Many times geospatial will be stored in a regionally relevant coordinate reference system. In our case: EPSG:2274. You should always re-project to EPSG:4326/LL84 unless there is a very good reason not to do so.
 
 ### Workflow Scheduling
 
