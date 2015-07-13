@@ -6,8 +6,11 @@
 Open Data Automation
 ====================
 
-Currently, data automation is being done with Safe FME. We are reading from a variety of data sources and writing into Socrata.
+Here we describe how we are approaching data automation with `Safe FME <http://www.safe.com>`_. We are reading from a variety of data sources and writing into `Socrata <http://www.socrata.com>`_.
 
+
+Index
+-----
 
 .. toctree::
    :maxdepth: 2
