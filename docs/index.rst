@@ -16,5 +16,6 @@ Index
    :maxdepth: 2
    :caption: FME
 
+   fme/workflow-organization
    fme/common-workflows
    fme/best-practices
