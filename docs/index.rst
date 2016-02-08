@@ -18,4 +18,5 @@ Index
 
    fme/workflow-organization
    fme/common-workflows
+   fme/job-scheduling
    fme/best-practices

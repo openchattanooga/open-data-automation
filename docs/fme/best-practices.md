@@ -30,20 +30,6 @@ Use the [DateFormatter](http://docs.safe.com/fme/html/FME_Transformers/FME_Trans
 
 Many times geospatial will be stored in a regionally relevant coordinate reference system. In our case: EPSG:2274. You should always re-project to EPSG:4326/LL84 unless there is a very good reason not to do so.
 
-### Workflow Scheduling
-
-If you have several workflows that need to run periodically, you will need to schedule them with some sort of mechanism. Windows offers the task scheduler. OS X and Linux both use cron for this. You could schedule each workflow to run individually. However, there are other ways of scheduling workflows that have been found to be very beneficial.
-
-#### Master Workflow
-
-Safe FME has the ability to do batch processing. You can take advantage of this by creating a master workflow that reads in an index of all workflows, and runs each one.
-
-You can use a CSV reader to read in a CSV where each record represents a workflow you want automated. Each record in the CSV will need to contain the full path to a workflow.
-
-The CSV will then be piped into a [WorkspaceRunner](http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/workspacerunner.htm) that will run each workflow.
-
-From here if you wish, you can use the Socrata writer to write to a dataset that keeps record of all of your workflow failures and successes as well as for how long it took to run them.
-
 ### Scripting
 
 The ability to write code in your workflows is very powerful. However, you should heed to these recommendations.
