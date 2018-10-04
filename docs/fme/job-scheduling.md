@@ -23,7 +23,25 @@ The task scheduler can be accessed by opening the `Control Panel`, then going to
 
 ###### Creating A Task
 
-The easiest way to create a task is to use the "Create Basic Task Wizard" by going to `Action` in the file menu then clicking `Create Basic Task`. From here, you can specify when the task should run. It will also ask you what program you want to run. For automating a Safe FME workflow, you will want to enter something like the following: `fme.exe c:\some\filepath\to\your\workflow.fmw`.
+The easiest way to create a task is to use the "Create Basic Task Wizard" by going to `Action` in the file menu then clicking `Create Basic Task`. From here, you can specify when the task should run. It will also ask you what program you want to run and the parameters you want to use. The best place to find this information is at the top of the `FME workspace log` window where it lists the command-line info needed to run the workspace (see the example below). 
+```
+    Command-line to run this workspace:
+        "C:\Program Files\FME\fme.exe" \\some\filepath\to\your\workflow\opendata_daily.fmw
+              --SourceDataset_CSV "\\some\filepath\to\your\parameter\opendata_daily_index.csv"
+```
+For automating a Safe FME workflow using the above example, you will want to enter something like the following into the `Action` secion of the `Task Scheduler`: 
+
+Program/script:
+
+`"C:\Program Files\FME\fme.exe"`
+
+Add Arguments (optional):
+
+`\\some\filepath\to\your\workflow\opendata_daily.fmw --SourceDataset_CSV "\\some\filepath\to\your\parameter\opendata_daily_index.csv"`
+
+Start In (optional):
+
+`\\some\filepath\to\your\workflow\`
 
 ###### Stopping A Task
 
