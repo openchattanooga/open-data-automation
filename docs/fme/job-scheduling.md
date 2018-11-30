@@ -8,7 +8,7 @@ Safe FME has the ability to do batch processing. You can take advantage of this 
 
 You can use a CSV reader to read in a CSV where each record represents a workflow you want automated. Each record in the CSV will need to contain the full path to a workflow.
 
-The CSV will then be piped into a [WorkspaceRunner](http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/workspacerunner.htm) that will run each workflow.
+The CSV will then be piped into a [WorkspaceRunner](http://docs.safe.com/fme/2019.0/html/FME_Desktop_Documentation/FME_Transformers/Transformers/workspacerunner.htm) that will run each workflow.
 
 From here if you wish, you can use the Socrata writer to write to a dataset that keeps record of all of your workflow failures and successes as well as for how long it took to run them.
 
