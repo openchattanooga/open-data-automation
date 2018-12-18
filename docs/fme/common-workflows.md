@@ -6,11 +6,11 @@ All workflows use the [Socrata writer](http://dev.socrata.com/publishers/example
 
 ### Basic
 
-This is the most basic workflow. It requires, at the very least, a basic [reader](http://docs.safe.com/fme/html/FME_Workbench/FME_Workbench.htm#Workbench/reader_adding_as_resource.htm) and Socrata writer.
+This is the most basic workflow. It requires, at the very least, a basic [reader](http://docs.safe.com/fme/2017.1/html/FME_Desktop_Documentation/FME_Workbench/Workbench/readers_adding.htm) and Socrata writer.
 
 ### Geospatial (Point Data)
 
-This workflow requires use of a geospatial reader. You will also need, at least, a [CoordinateExtractor](http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/coordinateextractor.htm) for extracting latitude and longitude, [AttributeReprojector](http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/attributereprojector.htm) to project the coordinates into EPSG:4326/LL84, a [StringConcatenator](http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/stringconcatenator.htm) for making a Location column, and a Socrata writer.
+This workflow requires use of a geospatial reader. You will also need, at least, a [CoordinateExtractor](https://www.safe.com/transformers/coordinate-extractor/) for extracting latitude and longitude, [AttributeReprojector](https://www.safe.com/transformers/attribute-reprojector/) to project the coordinates into EPSG:4326/LL84, a [StringConcatenator](https://www.safe.com/transformers/string-concatenator/) for making a Location column, and a Socrata writer.
 
 Your point columns should be represented by the following names and types:
 * Latitude
