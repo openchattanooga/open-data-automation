@@ -6,7 +6,7 @@ A single workflow project is usually a part of a large number of other workflows
 
 #### Workflow Runner
 
-This is an FME workflow that runs the project's main workflow. This is the actual workflow that is scheduled to run by the master workflow or placed directly on a scheduler.
+This is an FME workflow that runs the project's main workflow. This is the actual workflow that is scheduled to run by the master workflow, or placed directly on a scheduler.
 
 The name of this file for each workflow project is called `runner.fmw`.
 
