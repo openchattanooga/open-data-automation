@@ -26,7 +26,7 @@ Use the [DateTimeConverter](https://docs.safe.com/fme/html/FME_Desktop_Documenta
 
 ### Geospatial Data
 
-#### Ensure Geospatial Data is Projected To EPSG:4326/LL84
+#### Ensure Geospatial Data is Projected to EPSG:4326/LL84
 
 Many times geospatial will be stored in a regionally relevant coordinate reference system. In our case: EPSG:2274. You should always re-project to EPSG:4326/LL84 unless there is a very good reason not to.
 
