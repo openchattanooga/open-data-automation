@@ -25,7 +25,7 @@ Job Order,Job Name,Description,Path to fmw file
 
 #### Main Workflow
 
-This is the project's main FME data extraction workflow. These workflows can be run independently if needed. So, it is best to give the filename of the workflow something close to the name of the actual dataset instead of something generic.
+This is the project's main FME data extraction workflow. These workflows can be run independently if needed. So it is best to give the filename of the workflow something close to the name of the actual dataset instead of something generic.
 
 ### Grouping Multiple Workflows
 
