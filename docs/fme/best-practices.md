@@ -22,7 +22,7 @@ Setting your timeout to 30 seconds is generally good. If you find that your read
 
 #### Convert Dates and Times To ISO 8601
 
-Use the [DateFormatter](http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/dateformatter.htm) transformer to convert date/time columns into a standard date/time format. Socrata understands [several date/time formats](https://support.socrata.com/hc/en-us/articles/202949918-Importing-Data-Types-and-You-), but it is best to adhere to ISO 8601 as much as possible.
+Use the [DateTimeConverter](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Transformers/Transformers/datetimeconverter.htm) transformer to convert date/time columns into a standard date/time format. Socrata understands [several date/time formats](https://support.socrata.com/hc/en-us/articles/202949918-Importing-Data-Types-and-You-), but it is best to adhere to ISO 8601 as much as possible.
 
 ### Geospatial Data
 
